@@ -1,12 +1,12 @@
 import { css } from "styled-components";
 
-function fontStyler(fontSize: string, fontWeight: number, lineHeight: string) {
-  return css`
-    font-size: ${fontSize};
-    font-weight: ${fontWeight};
-    line-height: ${lineHeight};
-  `;
-}
+// function fontStyler(fontSize: string, fontWeight: number, lineHeight: string) {
+//   return css`
+//     font-size: ${fontSize};
+//     font-weight: ${fontWeight};
+//     line-height: ${lineHeight};
+//   `;
+// }
 
 export const theme = {
   color: {
