@@ -2,7 +2,7 @@ import styled from "styled-components";
 import bg1 from "../../shared/assets/bg1.jpg";
 
 export const ProfileBG = styled.div`
-  height: 600px;
+  height: 540px;
   width: 100%;
 
   background: url(${bg1}) 50% no-repeat;
@@ -15,41 +15,46 @@ export const ProfileWrapper = styled.div`
 
   width: 100%;
   max-width: 1140px;
-  height: 420px;
 
   margin: 0 auto;
-  padding: 160px 12px 0;
+  padding: 112px 12px 0;
 `;
 
-export const ProfileImage = styled.img`
+export const Image = styled.img`
   width: 196px;
   min-width: 196px;
   height: 261px;
   border-radius: 8px;
 `;
 
-export const ProfileDescription = styled.div`
+export const Description = styled.div`
   width: 100%;
+  height: 261px;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 `;
 
-export const MainDescription = styled.p`
-  white-space: pre-wrap;
+export const Title = styled.span`
+  display: block;
   padding-top: 4px;
 
-  color: ${({ theme }) => `${theme.color.primary}`};
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 1.5;
+  color: ${({ theme }) => `${theme.color.darkBlack}`};
+  font-size: 42px;
+  font-weight: 500;
 `;
 
-export const SubDescription = styled.p`
+export const Name = styled.span`
+  color: ${({ theme }) => `${theme.color.darkBlack}`};
+  font-size: 54px;
+  font-weight: 700;
+`;
+
+export const WelcomeMessage = styled.p`
   white-space: pre-wrap;
 
-  color: #78c6e8;
+  color: ${({ theme }) => `${theme.color.primary}`};
   font-size: 28px;
   font-weight: 700;
   line-height: 1.5;

@@ -10,15 +10,18 @@ export function ProfileSection() {
   return (
     <S.ProfileBG>
       <S.ProfileWrapper>
-        <S.ProfileImage src={profile} />
-        <S.ProfileDescription>
-          <S.MainDescription>
-            <Translation id='profileMainDescription' />
-          </S.MainDescription>
-          <S.SubDescription>
-            <Translation id='profileSubDescription' />
-          </S.SubDescription>
-        </S.ProfileDescription>
+        <S.Image src={profile} />
+        <S.Description>
+          <S.Title>
+            <Translation id='profileTitle' />
+          </S.Title>
+          <S.Name>
+            <Translation id='name' />
+          </S.Name>
+          <S.WelcomeMessage>
+            <Translation id='welcomeMessage' />
+          </S.WelcomeMessage>
+        </S.Description>
         <S.ShowMoreButton onClick={() => scrollToSection(aboutMeRef)}>
           <Translation id='start' />
         </S.ShowMoreButton>
