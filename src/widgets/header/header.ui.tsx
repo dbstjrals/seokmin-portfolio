@@ -23,7 +23,6 @@ export function Header() {
             <Translation id='languageToggle' />
           </S.NavItem>
           <ScrollNavItems name='About Me' forwardRef={aboutMeRef} />
-          <ScrollNavItems name='Skills' />
           <ScrollNavItems name='Projects' />
         </S.Nav>
       </S.HeaderContent>
