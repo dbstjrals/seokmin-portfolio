@@ -10,7 +10,7 @@ export function ProfileSection() {
   return (
     <S.ProfileBG>
       <S.ProfileWrapper>
-        <S.Image src={profile} />
+        <S.Image src={profile} alt='프로필 사진' />
         <S.Description>
           <S.Title>
             <Translation id='profileTitle' />

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import bg1 from "../../shared/assets/bg1.jpg";
 
-export const ProfileBG = styled.div`
+export const ProfileBG = styled.section`
   height: 540px;
   width: 100%;
 
