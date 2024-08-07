@@ -11,11 +11,11 @@ import { css } from "styled-components";
 const COLORS = {
   primary: "#7B9ACC",
   primary50: "#78C6E8",
-  secondary: "#D7C49E",
+  secondary: "rgba(215, 196, 158, 1)",
   darkBlack: "#263B5D",
   black: "#171717",
   white: "#FFFFFF",
-  gray: "rgba(96, 96, 96, 0.6)",
+  gray: "rgba(96, 96, 96, 1)",
 
   background: "#FFFFFF",
 };
