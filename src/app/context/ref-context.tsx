@@ -2,6 +2,7 @@ import { createContext, useContext } from "react";
 
 export interface RefContextProps {
   aboutMeRef: React.RefObject<HTMLElement>;
+  projectRef: React.RefObject<HTMLElement>;
   // 필요한 다른 ref도 여기에 추가
 }
 

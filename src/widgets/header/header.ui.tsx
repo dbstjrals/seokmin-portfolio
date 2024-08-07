@@ -6,7 +6,7 @@ import { scrollToSection, scrollToTop } from "../../shared/utils/scrollUtils";
 import * as S from "./header.styled";
 
 export function Header() {
-  const { aboutMeRef } = useRefs();
+  const { aboutMeRef, projectRef } = useRefs();
   const { setLanguage } = useLanguage();
   const isScrolled = useScroll(72);
 
@@ -23,7 +23,7 @@ export function Header() {
             <Translation id='languageToggle' />
           </S.NavItem>
           <ScrollNavItems name='About Me' forwardRef={aboutMeRef} />
-          <ScrollNavItems name='Projects' />
+          <ScrollNavItems name='Projects' forwardRef={projectRef} />
         </S.Nav>
       </S.HeaderContent>
     </S.Header>
