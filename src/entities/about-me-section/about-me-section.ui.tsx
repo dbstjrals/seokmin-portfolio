@@ -1,5 +1,5 @@
-import type { RefContextProps } from "../../app/context/ref-context";
 import * as S from "./about-me-section.styled";
+import { SectionTitle } from "../../shared/components/Section";
 import Information from "./components/Information";
 import Education from "./components/Education";
 import Certificate from "./components/Certificate";
@@ -9,20 +9,16 @@ import Prize from "./components/Prize";
 export function AboutMeSection({
   forwardRef,
 }: {
-  forwardRef: RefContextProps;
+  forwardRef: React.RefObject<HTMLElement>;
 }) {
   return (
-    <S.AboutMeSection ref={forwardRef.aboutMeRef}>
+    <S.AboutMeSection ref={forwardRef}>
       <S.AboutMeWrapper>
-        <SectionTitle />
+        <SectionTitle title='About Me' />
         <Details />
       </S.AboutMeWrapper>
     </S.AboutMeSection>
   );
-}
-
-function SectionTitle() {
-  return <S.SectionTitle>About Me</S.SectionTitle>;
 }
 
 function Details() {

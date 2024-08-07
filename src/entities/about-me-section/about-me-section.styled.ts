@@ -1,36 +1,15 @@
 import styled from "styled-components";
+import { SectionWrapper } from "../../shared/components/Section";
 
 export const AboutMeSection = styled.section`
   background: linear-gradient(
     to right bottom,
     rgba(120, 198, 232, 0.5),
-    rgba(123, 154, 204, 0.5)
+    rgba(123, 154, 204, 0.7)
   );
 `;
 
-export const AboutMeWrapper = styled.div`
-  position: relative;
-
-  width: 100%;
-  max-width: 1140px;
-
-  margin: 0 auto;
-  padding: 48px 12px;
-`;
-
-export const SectionTitle = styled.div`
-  display: inline-block;
-  padding: 12px 20px;
-  margin-bottom: 48px;
-
-  background-color: #a2d0ef;
-  border-radius: 8px;
-
-  color: ${({ theme }) => theme.color.white};
-  font-size: 36px;
-  font-weight: 600;
-  line-height: 1.5;
-`;
+export const AboutMeWrapper = styled(SectionWrapper)``;
 
 export const Details = styled.div`
   display: flex;
